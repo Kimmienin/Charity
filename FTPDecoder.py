@@ -1,13 +1,10 @@
 from ftplib import FTP
+import sys
 
 ftp = FTP('jeangourd.com')
 ftp.login("anonymous","");
 data = []
  
-ftp.dir(data.append)
+ftp.dir()
  
 ftp.quit()
- 
-for line in data:
-    print ("-", line)
-    
